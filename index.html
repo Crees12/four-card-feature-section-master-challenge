@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border-top-width: 1px;
+      margin: 20px;
+    }
+
+    .col {
+      border-top-width: 1px;
+      margin: 20px;
+    }
+
+    .top {
+      border-top-style: solid;
+      border-top-color: hsl(0, 78%, 62%);
+      width: 300px;
+      height: 200px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin: 20px;
+    }
+
+    .left {
+      border-top-color: hsl(180, 62%, 55%);
+      border-top-style: solid;
+      width: 300px;
+      height: 200px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .bottom {
+      border-top-color: hsl(34, 97%, 64%);
+      border-top-style: solid;
+      width: 300px;
+      height: 200px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin: 20px;
+    }
+
+    .right {
+      border-top-color: hsl(212, 86%, 64%);
+      border-top-style: solid;
+      width: 300px;
+      height: 200px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .topText {
+      text-align: center;
+      font-family: Poppins-l;
+      font-size: 24px;
+    }
+
+    .bold {
+      font-family: Poppins-s;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    @font-face {
+      font-family: 'Poppins-l';
+      src: url("./fonts/Poppins-ExtraLight.ttf");
+    }
+
+    @font-face {
+      font-family: 'Poppins-m';
+      src: url("./fonts/Poppins-Medium.ttf");
+    }
+
+    @font-face {
+      font-family: 'Poppins-s';
+      src: url("./fonts/Poppins-SemiBold.ttf");
+    }
+
+    .header {
+      font-size: 15px;
+      font-family: Poppins-m;
+      margin-left: 20px;
+    }
+
+    .insideText {
+      font-size: 15px;
+      font-family: Poppins-l;
+      margin-left: 20px;
+    }
+
+    .icon {
+      float: right;
+      margin-right: 20px;
+    }
+
+    @media only screen and (max-width: 375px) {
+  .row {
+    flex-direction: column;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <p class="topText">Reliable, efficient delivery
+  <p class="bold"> Powered by Technology</p>
+  <p class="topText">
+    Our Artificial Intelligence powered tools use millions of project data points
+    to ensure that your project is successful</p>
+  </p>
+  <div class="row">
+    <div class="left">
+      <p class="header">Supervisor</p>
+      <p class="insideText">Monitors activity to identify project roadblocks</p>
+      <img class="icon" src="./images/icon-supervisor.svg" alt="">
+    </div>
+    <div class="col">
+
+      <div class="top">
+        <p class="header">Team Builder</p>
+        <p class="insideText">Scans our talent network to create the optimal team for your project</p>
+        <img class="icon" src="./images/icon-team-builder.svg" alt="">
+      </div>
+      <div class="bottom">
+        <p class="header">Karma</p>
+        <p class="insideText">Regularly evaluates our talent to ensure quality</p>
+        <img class="icon" src="./images/icon-team-builder.svg" alt="">
+      </div>
+    </div>
+
+
+    <div class="right">
+      <p class="header">Calculator</p>
+        <p class="insideText">Uses data from past projects to provide better delivery estimates</p>
+        <img class="icon" src="./images/icon-calculator.svg" alt="">
+    </div>
+  </div>
+</body>
+
+</html>
